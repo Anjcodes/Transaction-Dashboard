@@ -3,5 +3,4 @@ pandas
 plotly
 seaborn
 matplotlib
-sqlite3
 hashlib
