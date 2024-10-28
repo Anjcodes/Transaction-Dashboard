@@ -8,6 +8,14 @@ warnings.filterwarnings('ignore')
 
 st.set_page_config(page_title="Transaction Dashboard", page_icon=":bar_chart:", layout="wide")
 st.title(" :bar_chart: Transaction Dashboard")
+st.write(
+    """
+    This app provides an in-depth analysis of customer transactions. 
+    It allows you to filter data by customizable age groups, gender, and other relevant demographics.
+    You can clean your data, merge transaction data with customer demographics from separate sheets,
+    and gain insights into transaction patterns for data-driven decision-making.
+    """
+)
 st.markdown('<style>div.block-container{padding-top:2rem;}</style>', unsafe_allow_html=True)
 
 merged_data = None
@@ -161,6 +169,8 @@ if f1 is not None:
                         unsafe_allow_html=True
                     )
                 
+                st.write(" ")
+
                 with col2:
                     st.markdown(
                         f"""
